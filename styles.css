@@ -381,3 +381,33 @@ a:hover { color: var(--accent-hover); }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* =============================================================
+   EXTRA CONTENT STYLES (about extras, card meta, two-column
+   experience & education)
+   ============================================================= */
+.about-subhead { margin-top: 1.75rem; }
+.about-extra { color: var(--muted); font-size: 0.98rem; }
+.project-meta {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.35rem;
+  flex: 0 0 auto !important;
+}
+.experience-grid { display: grid; gap: 2.5rem; }
+.timeline-heading {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+.timeline + .timeline-heading { margin-top: 2.5rem; }
+.timeline-item h4 { font-size: 1.075rem; font-weight: 650; margin: 0 0 0.35rem; line-height: 1.3; }
+.plain-list { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+.plain-list li { margin-bottom: 0.4rem; }
+@media (min-width: 56em) {
+  .experience-grid { grid-template-columns: 1.25fr 1fr; gap: 4rem; }
+}

@@ -11,11 +11,11 @@ personal-website/
 ├── script.js       ← mobile menu and scroll animations
 ├── README.md       ← this guide
 └── images/         ← your photo, project pictures, icon
-    ├── profile.svg
+    ├── profile.jpg
     ├── project-1.svg
     ├── project-2.svg
     ├── project-3.svg
-    ├── og-image.png  (preview picture shown when your link is shared)
+    ├── og-image.jpg  (preview picture shown when your link is shared)
     └── favicon.svg   (little icon in the browser tab)
 ```
 
@@ -161,9 +161,9 @@ Look for comments that say **`SWAP IMAGE`** in `index.html`.
 
 | Image | Suggested size |
 |---|---|
-| Profile photo (`profile.svg`) | Square, at least 600 × 600 px. It is shown as a circle |
+| Profile photo (`profile.jpg`) | Square, at least 600 × 600 px. It is shown as a circle. Already your photo; replace the file to change it |
 | Project images (`project-1.svg` …) | 16:10 shape, e.g. 1200 × 750 px |
-| Sharing preview (`og-image.png`) | Exactly 1200 × 630 px, PNG or JPG |
+| Sharing preview (`og-image.jpg`) | Exactly 1200 × 630 px, PNG or JPG |
 | Tab icon (`favicon.svg`) | Square. Edit the letters in the file, or swap in your own `.svg`/`.png` and update the `<link rel="icon">` line |
 
 Keep photos under about 500 KB so the site loads fast. Free tools like
