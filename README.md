@@ -8,7 +8,8 @@ can be put online for free with GitHub and Netlify.
 personal-website/
 ├── index.html      ← all the words on the site live here
 ├── styles.css      ← colors, fonts and layout
-├── script.js       ← mobile menu and scroll animations
+├── script.js       ← mobile menu, scroll animations, video player
+├── videos/         ← UP Bike Share videos (MP4)
 ├── README.md       ← this guide
 └── images/         ← your photo, project pictures, icon
     ├── profile.jpg
@@ -168,6 +169,14 @@ Look for comments that say **`SWAP IMAGE`** in `index.html`.
 
 Keep photos under about 500 KB so the site loads fast. Free tools like
 [Squoosh](https://squoosh.app) can shrink them.
+
+### Videos
+
+Videos live in the `videos` folder and are listed under **Watch** on the
+UP Bike Share card in `index.html` (look for `EDIT ME: videos`). To add
+one, put the `.mp4` in `videos`, a still image for it in `images`, and
+copy one of the `<li> … </li>` lines. Keep each video under 100 MB, since
+GitHub refuses larger files.
 
 ### Colors and fonts
 

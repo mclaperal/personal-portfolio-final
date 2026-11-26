@@ -110,3 +110,40 @@
     });
   }
 })();
+
+/* ---- Pop-up video player for "Watch" links ----
+   Without JavaScript (or on very old browsers) the links simply
+   open the video file directly, which also works. */
+(function () {
+  "use strict";
+  var dialog = document.getElementById("video-dialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  var video = dialog.querySelector("video");
+  var title = document.getElementById("video-dialog-title");
+  var closeBtn = dialog.querySelector(".video-close");
+  var opener = null;
+
+  document.querySelectorAll(".video-link").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      opener = link;
+      title.textContent = link.querySelector(".video-title").textContent;
+      video.poster = link.getAttribute("data-poster") || "";
+      video.src = link.getAttribute("href");
+      dialog.showModal();
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  });
+
+  function close() { dialog.close(); }
+  closeBtn.addEventListener("click", close);
+  // Click on the dark backdrop closes the player
+  dialog.addEventListener("click", function (e) { if (e.target === dialog) close(); });
+  dialog.addEventListener("close", function () {
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+    if (opener) opener.focus();
+  });
+})();
