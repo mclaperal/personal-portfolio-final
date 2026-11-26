@@ -12,9 +12,9 @@ personal-website/
 ├── README.md       ← this guide
 └── images/         ← your photo, project pictures, icon
     ├── profile.jpg
-    ├── project-1.svg
-    ├── project-2.svg
-    ├── project-3.svg
+    ├── surevax.jpg
+    ├── up-bike-share.jpg
+    ├── marine-conservation.jpg
     ├── og-image.jpg  (preview picture shown when your link is shared)
     └── favicon.svg   (little icon in the browser tab)
 ```
@@ -162,7 +162,7 @@ Look for comments that say **`SWAP IMAGE`** in `index.html`.
 | Image | Suggested size |
 |---|---|
 | Profile photo (`profile.jpg`) | Square, at least 600 × 600 px. It is shown as a circle. Already your photo; replace the file to change it |
-| Project images (`project-1.svg` …) | 16:10 shape, e.g. 1200 × 750 px |
+| Project images (`surevax.jpg`, `up-bike-share.jpg`, `marine-conservation.jpg`) | 16:10 shape, e.g. 1200 × 750 px |
 | Sharing preview (`og-image.jpg`) | Exactly 1200 × 630 px, PNG or JPG |
 | Tab icon (`favicon.svg`) | Square. Edit the letters in the file, or swap in your own `.svg`/`.png` and update the `<link rel="icon">` line |
 
